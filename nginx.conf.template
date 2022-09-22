@@ -1,8 +1,14 @@
-server {
-    # https://github.com/docker-library/docs/tree/master/nginx#using-environment-variables-in-nginx-configuration-new-in-119
-    listen ${MY_PORT};
+events {
 
-    location / {
-        proxy_pass https://www.google.com/;
+}
+
+http {
+    server {
+        # https://github.com/docker-library/docs/tree/master/nginx#using-environment-variables-in-nginx-configuration-new-in-119
+        listen ${PORT};
+
+        location / {
+            proxy_pass https://www.google.com/;
+        }
     }
 }
