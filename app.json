@@ -1,0 +1,6 @@
+{
+    "name": "heroku nginx reverse proxy",
+    "description": "Just a small project that shows how to set up a standalone nginx as reverse proxy in Heroku.",
+    "repository": "https://github.com/bugbounted/heroku-nginx-reverse-proxy",
+    "stack": "container"
+  }
