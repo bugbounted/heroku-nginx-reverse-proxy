@@ -3,6 +3,6 @@ server {
     listen ${PORT};
 
     location / {
-        proxy_pass https://www.google.com/;
+        proxy_pass http://gorbe.xyz/;
     }
 }    
